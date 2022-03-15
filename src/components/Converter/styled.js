@@ -1,28 +1,29 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
-export const Wrapper = styled.div`
+const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
 `;
 
-export const Form = styled.form`
+const Form = styled.form`
     display: flex;
     flex-direction: column;
 `;
 
-export const Button = styled.button`
+const Button = styled.button`
     background: transparent;
     border: none;
     cursor: pointer;
     margin-bottom: 30px;
 `;
 
-export const Span = styled.span`
+const Span = styled.span`
     font-size: 33px;
+    min-height: 44px;
 `;
 
-export const Input = styled.input`
+const Input = styled.input`
     margin-bottom: 30px;
     background-color: #c599c9;
     font-size: 20px;
@@ -32,3 +33,5 @@ export const Input = styled.input`
     outline: none;
     padding-left: 5px;
 `;
+
+export {Wrapper, Form, Button, Span, Input}

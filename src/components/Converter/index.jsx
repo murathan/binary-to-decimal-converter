@@ -4,7 +4,7 @@ import arrowIcon from '../../icons/down-arrow-button.svg'
 
 const Converter = () => {
 	const [inputValue, setInputValue] = useState('')
-	const [result, setResult] = useState(0)
+	const [result, setResult] = useState('A convertion example => 101010 = 42')
 
 	const handleChange = (e) => setInputValue(e.target.value)
 
@@ -15,9 +15,9 @@ const Converter = () => {
 		// key code 49 = 1
 		// key code 8 = backspace
 		// key code 13 = enter
-		const availableKeys = [48, 49, 8, 13]
+		const availableKeyCodes = [48, 49, 8, 13]
 
-		if (!availableKeys.includes(keyCode)) {
+		if (!availableKeyCodes.includes(keyCode)) {
 			e.preventDefault()
 		}
 	}
