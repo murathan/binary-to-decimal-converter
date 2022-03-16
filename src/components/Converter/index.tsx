@@ -10,11 +10,7 @@ const Converter : React.FC = () => {
 
 	const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>):void => {
 		const keyCode : string = e.code
-
-		// key code 48 = 0
-		// key code 49 = 1
-		// key code 8 = backspace
-		// key code 13 = enter	
+		
 		const availableKeyCodes : string[] = ['Digit1', 'Digit0', 'Backspace', 'Enter']
 
 		if (!availableKeyCodes.includes(keyCode)) {
